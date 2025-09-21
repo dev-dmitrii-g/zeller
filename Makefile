@@ -1,4 +1,3 @@
-
 CXX = g++
 CXXFLAGS = -Wall
 TARGET = zeller
@@ -19,4 +18,3 @@ uninstall: $(TARGET)
 	rm -f $(DESTDIR)$(PREFIX)/bin/$(TARGET)
 clean:
 	rm -f $(TARGET)
-

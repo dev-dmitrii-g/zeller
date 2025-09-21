@@ -38,6 +38,9 @@ void version()
 void georgian()
 {
 	int y, m, q, h, K, J = -1;
+	const char* week[] = { "Saturday", "Sunday", "Monday",
+					 "Tuesday", "Wednesday", "Thursday",
+					 "Friday" };
 
 	cout << "Enter year: "; cin >> y;
 	while (y <= 0)
@@ -81,18 +84,7 @@ void georgian()
 		if (m < 10) cout << "0";
 	}
 	cout << m << "." << y << " - ";
-
-	switch (h)
-	{
-		case 0: cout << "Saturday" << endl; break;
-		case 1: cout << "Sunday" << endl; break;
-		case 2: cout << "Monday" << endl; break;
-		case 3: cout << "Tuesday" << endl; break;
-		case 4: cout << "Wednesday" << endl; break;
-		case 5: cout << "Thursday" << endl; break;
-		case 6: cout << "Friday" << endl; break;
-	}
-
+	cout << week[h] << endl;
 }
 
 int main(int argc, char* argv[])
